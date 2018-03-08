@@ -1,7 +1,7 @@
 package com.example.gaston.andevlottiekeyframe;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -20,20 +20,21 @@ public class KeyFrameDemo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_key_frame_demo);
 
-        try {
-            PonerAnimacion();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
+        startAnimation();
     }
 
 
-    private void PonerAnimacion() throws IOException {
+    private void startAnimation() {
+        InputStream stream;
+        KFImage kfImage;
 
-        InputStream stream = getResources().getAssets().open("sample_file");
-        KFImage kfImage = KFImageDeserializer.deserialize(stream);
-
+        try {
+            stream = getResources().getAssets().open("sample_file");
+            kfImage = KFImageDeserializer.deserialize(stream);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return;
+        }
 
         KeyframesDrawable kfDrawable = new KeyframesDrawableBuilder().withImage(kfImage).build();
 
@@ -41,7 +42,6 @@ public class KeyFrameDemo extends AppCompatActivity {
         imageView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         imageView.setImageDrawable(kfDrawable);
         imageView.setImageAlpha(0);
-
 
         kfDrawable.startAnimation();
     }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginBottom="10dp">
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
                 android:elevation="10dp"
                 android:padding="4dp"
                 android:scaleType="centerCrop"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@mipmap/ic_launcher"/>
 
             <TextView
                 android:id="@+id/post_username"
@@ -39,14 +39,14 @@
                 android:paddingTop="10dp"
                 android:text="AnDevMeetUp"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
             <ImageView
                 android:id="@+id/post_created_time_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:src="@mipmap/ic_created_time" />
+                android:src="@mipmap/ic_created_time"/>
 
             <TextView
                 android:id="@+id/post_created_time"
@@ -59,7 +59,7 @@
                 android:paddingTop="10dp"
                 android:text="Just Now"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
         </LinearLayout>
 
@@ -80,7 +80,7 @@
             android:scaleType="centerCrop"
             app:lottie_fileName="lego_loader.json"
             app:lottie_imageAssetsFolder="assets"
-            app:lottie_loop="true" />
+            app:lottie_loop="true"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -103,7 +103,7 @@
                 android:visibility="visible"
                 app:lottie_fileName="thumbup.json"
                 app:lottie_imageAssetsFolder="assets"
-                app:lottie_loop="false" />
+                app:lottie_loop="false"/>
 
             <ImageButton
                 android:id="@+id/post_comments"
@@ -112,7 +112,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginRight="5dp"
                 android:background="#00ffffff"
-                android:src="@mipmap/ic_comment_grey" />
+                android:src="@mipmap/ic_comment_grey"/>
 
             <TextView
                 android:id="@+id/post_comments_number"
@@ -121,7 +121,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginRight="20dp"
                 android:text="20"
-                android:textSize="16sp" />
+                android:textSize="16sp"/>
 
 
             <com.airbnb.lottie.LottieAnimationView
@@ -132,7 +132,7 @@
                 android:scaleType="centerCrop"
                 app:lottie_fileName="5_stars.json"
                 app:lottie_imageAssetsFolder="assets"
-                app:lottie_loop="true" />
+                app:lottie_loop="true"/>
 
 
             <ImageButton
@@ -142,7 +142,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="6dp"
                 android:background="#00ffffff"
-                android:src="@mipmap/ic_action_overflow" />
+                android:src="@mipmap/ic_action_overflow"/>
 
         </LinearLayout>
 
@@ -157,7 +157,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/colorGray" />
+                android:background="@color/colorGray"/>
 
         </RelativeLayout>
 
@@ -174,7 +174,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="5dp"
                 android:background="#00ffffff"
-                android:src="@mipmap/ic_thumb_up_black" />
+                android:src="@mipmap/ic_thumb_up_black"/>
 
             <TextView
                 android:id="@+id/post_likes_number"
@@ -182,7 +182,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="100"
-                android:textSize="12sp" />
+                android:textSize="12sp"/>
 
         </LinearLayout>
 
@@ -197,7 +197,7 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:text="AnDev Lottie Meet Up"
-                android:textSize="16sp" />
+                android:textSize="16sp"/>
 
 
         </LinearLayout>

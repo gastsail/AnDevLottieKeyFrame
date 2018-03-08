@@ -1,28 +1,28 @@
 package com.example.gaston.andevlottiekeyframe;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.airbnb.lottie.LottieImageAsset;
 
 public class LottieDemo extends AppCompatActivity {
+
+    LottieAnimationView lottieAnimationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lottie_demo);
 
-        final LottieAnimationView animationView = findViewById(R.id.animation_view);
+        lottieAnimationView = findViewById(R.id.animation_view);
 
-        animationView.setOnClickListener(new View.OnClickListener() {
+        lottieAnimationView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                animationView.playAnimation();
+                lottieAnimationView.playAnimation();
+                lottieAnimationView.setSpeed(10);
             }
         });
-
-
     }
 }
