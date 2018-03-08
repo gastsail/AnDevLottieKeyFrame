@@ -1,36 +1,34 @@
 package com.example.gaston.andevlottiekeyframe;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ImageButton;
 
 import com.airbnb.lottie.LottieAnimationView;
 
 public class LottieDemo2 extends AppCompatActivity {
 
-    private LottieAnimationView mAnimationView, mAnimationView2,mAnimationView3;
+    private LottieAnimationView lottieAnimationView;
+    private LottieAnimationView lottieAnimationView1;
+    private LottieAnimationView lottieAnimationView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lottie_demo2);
 
-        mAnimationView = findViewById(R.id.animation_view);
-        mAnimationView2 = findViewById(R.id.animation_view2);
-        mAnimationView3 = findViewById(R.id.animation_view3);
+        lottieAnimationView = findViewById(R.id.animation_view);
+        lottieAnimationView1 = findViewById(R.id.animation_view2);
+        lottieAnimationView2 = findViewById(R.id.animation_view3);
 
-
-        mAnimationView.setOnClickListener(new View.OnClickListener() {
+        lottieAnimationView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mAnimationView.playAnimation();
-
-
+                lottieAnimationView.playAnimation();
             }
         });
 
-        mAnimationView2.playAnimation();
-        mAnimationView3.playAnimation();
+        lottieAnimationView1.playAnimation();
+        lottieAnimationView2.playAnimation();
     }
 }
