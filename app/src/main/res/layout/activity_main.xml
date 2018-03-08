@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gaston.andevlottiekeyframe.MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/andev"
+        android:id="@+id/imgAndev"
+        android:layout_centerHorizontal="true"/>
+
+<Button
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:text="Demo Lottie"
+    android:layout_below="@+id/imgAndev"
+    android:layout_centerInParent="true"
+    android:id="@+id/btnDemoLottie"
+    />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Demo Lottie 2"
+        android:id="@+id/btnDemoLottie2"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/btnDemoLottie"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Demo KeyFrame"
+        android:layout_centerInParent="true"
+        android:id="@+id/btnDemoKeyframe"
+        android:layout_below="@+id/btnDemoLottie2"
+        />
+
+
+
+</RelativeLayout>
