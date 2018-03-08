@@ -20,6 +20,7 @@ public class LottieDemo extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 animationView.playAnimation();
+                animationView.setSpeed(10);
             }
         });
 
